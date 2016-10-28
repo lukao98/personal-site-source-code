@@ -1,5 +1,6 @@
 var stylus = require('gulp-stylus'),
     pug = require('gulp-pug'),
+    gulp = require('gulp');
     
 
     gulp.task('stylus', function()){
