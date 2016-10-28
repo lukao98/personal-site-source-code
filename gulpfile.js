@@ -2,7 +2,8 @@ var stylus = require('gulp-stylus'),
     pug = require('gulp-pug'),
     gulp = require('gulp'),
     clean = require('gulp-clean'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    taskList = ['clean', 'stylus', 'pug'];
     
 
     gulp.task('clean', function(){
@@ -11,15 +12,15 @@ var stylus = require('gulp-stylus'),
 
     });
     
-    gulp.task('stylus', ['clean'], function(){
+    gulp.task('stylus', function(){
     	gulp
     		.src('./src/styles/main.styl')
     		.pipe(plumber())
     		.pipe(stylus())
-    		.pipe(gulp.dest('app/assets/css'))
+    		.pipe(gulp.dest('./app/assets/css'))
     });
 
-     gulp.task('pug', ['clean'], function(){
+     gulp.task('pug', function(){
     	gulp	
     		.src('./src/views/index.pug')
     		.pipe(plumber())
@@ -28,8 +29,6 @@ var stylus = require('gulp-stylus'),
     		.pipe(gulp.dest('./app/'));
     });
 
-    gulp.task('build', function(){	
-    	gulp.watch('stylus');
-    	gulp.watch('pug');
+    gulp.task('build', taskList, function(){	
     });
 
