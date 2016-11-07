@@ -7,5 +7,5 @@ var gulp = require('gulp'),
     	.src('./src/styles/main.styl')
     	.pipe(plumber())
     	.pipe(stylus())
-    	.pipe(gulp.dest('./app/assets/css'))
+    	.pipe(gulp.dest('./app/assets/css'));
  });
