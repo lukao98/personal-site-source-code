@@ -14,6 +14,6 @@ require('./tasks/prod/jsdist.js');
 require('./tasks/prod/pugdist.js');
 require('./tasks/prod/cleandist.js');
 require('./tasks/prod/build.js');
-require('./tasks/prod/imagensdist.js');
+require('./tasks/prod/imagesdist.js');
 
 
