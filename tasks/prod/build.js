@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-	tasks = ['jsdist', 'pugdist', 'cleandist', 'stylusdist', 'imagensdist'];
+	tasks = ['jsdist', 'pugdist', 'cleandist', 'stylusdist', 'imagesdist'];
 
 gulp.task('build', tasks);
 
