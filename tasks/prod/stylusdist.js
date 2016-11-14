@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 gulp.task('stylusdist', ['cleandist'], function() {
 	gulp
- 		.src('./src/styl/main.styl')
+ 		.src('./src/styles/main.styl')
     	.pipe(plumber())
     	.pipe(stylus({
       		use: [koutoSwiss(), prefixer(), jeet(), rupture()],
