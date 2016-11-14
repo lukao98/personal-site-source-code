@@ -17,3 +17,5 @@ require('./tasks/prod/build.js');
 require('./tasks/prod/imagesdist.js');
 
 
+//tasks toc
+require('./tasks/default.js');
