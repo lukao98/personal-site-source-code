@@ -1,10 +1,9 @@
 doctype html
 html
-	head
-		title Lucas Gabriel | Futuro Full Stack Developer
-		link(rel="stylesheet", href='./assets/css/main.css')
+	include _partials/head.pug
 	body
-		h1.primary-title
-			|Lucas Gabriel
-		img(src = './assets/img/Teste1.jpg')
-		script(src = './assets/js/main.js')
+		include _partials/header.pug
+		include _partials/biografia.pug
+		include _partials/skills.pug
+		include _partials/contato.pug
+		include _partials/footer.pug
